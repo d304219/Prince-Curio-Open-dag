@@ -157,18 +157,21 @@ nav ul li a:hover {
 }
 
 /* Subjects section styling *//* Subjects section styling */
+
 .subjects {
     padding: 50px 0;
-    background-color: #f9f9f9; /* Slightly different background color for contrast */
+    background-color: #f9f9f9;
 }
 
-.subjects .wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
+.subjectsContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .subjectsInfo {
-    margin-bottom: 20px;
+    flex: 1;
 }
 
 .subjectsInfo h2 {
@@ -182,17 +185,9 @@ nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Flex container for subject image and grid */
-.subjectsContent {
-    display: flex;
-    align-items: flex-start; /* Align items to the top */
-    gap: 30px; /* Space between image and grid */
-    flex-wrap: wrap; /* Ensure responsive layout */
-}
-
 .subjectImg {
     flex: 1;
-    max-width: 400px; /* Limit the width of the image */
+    max-width: 400px;
 }
 
 .subjectImg img {
@@ -205,12 +200,12 @@ nav ul li a:hover {
     flex: 2;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px; /* Space between items */
+    gap: 20px;
 }
 
 .subject {
-    background-color: #fff; /* White background for each subject card */
-    border: 1px solid #ddd; /* Light border for card separation */
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
