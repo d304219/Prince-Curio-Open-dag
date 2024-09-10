@@ -262,4 +262,26 @@ nav ul li a:hover {
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}}
+
+/* Teachers section styling */
+.teachers {
+    padding: 50px 0;
+    background-color: #f4f4f4;
 }
+
+.teachersInfo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.teachersInfo h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.teachersInfo p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
