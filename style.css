@@ -137,6 +137,8 @@ nav ul li a:hover {
 .courseInfo h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #03357C; /* Curio's blue */
+
 }
 
 .courseInfo p {
@@ -177,6 +179,8 @@ nav ul li a:hover {
 .subjectsInfo h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #03357C; /* Curio's blue */
+
 }
 
 .subjectsInfo p {
@@ -245,6 +249,8 @@ nav ul li a:hover {
 .accelerateInfo h2 {
     font-size: 2rem;
     margin-bottom: 10px;
+    color: #03357C; /* Curio's blue */
+
 }
 
 .accelerateInfo p {
@@ -276,8 +282,10 @@ nav ul li a:hover {
 }
 
 .teachersInfo h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
+    color: #03357C; /* Curio's blue */
+
 }
 
 .teachersInfo p {
@@ -337,7 +345,7 @@ nav ul li a:hover {
 }
 
 .opinionInfo h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
     color: #03357C; /* Curio's blue */
 }
