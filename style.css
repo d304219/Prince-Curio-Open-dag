@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* Body styling */
 body {
@@ -62,6 +66,39 @@ nav ul li a:hover {
 }
 
 /* Hero section styling */
+
+
+h2 {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #03357C; /* Curio's blue */
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50%;
+    height: 4px;
+    background-color: #FFCC00; /* Curio's yellow */
+}
+section{
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+}
+
+section:nth-child(odd) {
+    background-color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
 .hero {
     position: relative;
     height: 80vh;
@@ -72,8 +109,6 @@ nav ul li a:hover {
     padding: 20px;
     border-radius: 10px;
 }
-
-
 .heroContent {
     z-index: 2;
     max-width: 600px;
@@ -116,12 +151,6 @@ nav ul li a:hover {
 }
 
 /* Course section styling */
-.course {
-    padding: 50px 0;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-}
 
 .course .wrapper {
     display: flex;
@@ -135,12 +164,6 @@ nav ul li a:hover {
     padding-right: 20px;
 }
 
-.courseInfo h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #03357C; /* Curio's blue */
-
-}
 
 .courseInfo p {
     font-size: 1.1rem;
@@ -161,10 +184,6 @@ nav ul li a:hover {
 
 /* Subjects section styling *//* Subjects section styling */
 
-.subjects {
-    padding: 50px 0;
-    background-color: #f9f9f9;
-}
 
 .subjectsContent {
     display: flex;
@@ -177,12 +196,6 @@ nav ul li a:hover {
     flex: 1;
 }
 
-.subjectsInfo h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #03357C; /* Curio's blue */
-
-}
 
 .subjectsInfo p {
     font-size: 1.2rem;
@@ -228,13 +241,6 @@ nav ul li a:hover {
 }
 
 
-.accelerate {
-    padding: 50px 0;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-}
-
 .accelerate .wrapper {
     display: flex;
     justify-content: space-between;
@@ -247,12 +253,6 @@ nav ul li a:hover {
     padding-right: 20px;
 }
 
-.accelerateInfo h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #03357C; /* Curio's blue */
-
-}
 
 .accelerateInfo p {
     font-size: 1.1rem;
@@ -272,21 +272,10 @@ nav ul li a:hover {
 }
 
 /* Teachers section styling */
-.teachers {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-}
 
 .teachersInfo {
     text-align: center;
     margin-bottom: 30px;
-}
-
-.teachersInfo h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #03357C; /* Curio's blue */
-
 }
 
 .teachersInfo p {
@@ -335,21 +324,12 @@ nav ul li a:hover {
 }
 
 /* Opinion section styling */
-/* Opinion section styling */
-.opinion {
-    padding: 50px 0;
-    background-color: #fff;
-}
+
 
 .opinionInfo {
     text-align: center;
 }
 
-.opinionInfo h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #03357C; /* Curio's blue */
-}
 
 .opinionCard {
     background-color: #f9f9f9;
@@ -397,7 +377,10 @@ nav ul li a:hover {
 footer {
     background-color: #03357C; /* Curio's blue */
     color: white;
-    padding: 50px 0 10px;
+    padding: 50px 0 0;
+}
+#shadow-host-companion{
+    display: none;
 }
 
 .footerGrid {
