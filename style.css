@@ -66,7 +66,11 @@ nav ul li a:hover {
 }
 
 /* Hero section styling */
-
+p{
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
 
 h2 {
     position: relative;
@@ -165,19 +169,15 @@ section:nth-child(even) {
 }
 
 
-.courseInfo p {
-    font-size: 1.1rem;
-    color: #555;
-    line-height: 1.8;
-}
-
 .courseImg {
     flex: 1;
     text-align: center;
 }
 
 .courseImg img {
-    max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block; /* optional, removes any small gap at the bottom of images */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -197,16 +197,8 @@ section:nth-child(even) {
 }
 
 
-.subjectsInfo p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.8;
-}
-
 .subjectImg {
-    flex: 1;
-    max-width: 400px;
-}
+flex: 1;}
 
 .subjectImg img {
     width: 100%;
@@ -257,7 +249,6 @@ section:nth-child(even) {
 .accelerateInfo p {
     font-size: 1.1rem;
     color: #555;
-    line-height: 1.8;
 }
 
 .accelerateImg {
@@ -266,7 +257,7 @@ section:nth-child(even) {
 }
 
 .accelerateImg img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -276,11 +267,6 @@ section:nth-child(even) {
 .teachersInfo {
     text-align: center;
     margin-bottom: 30px;
-}
-
-.teachersInfo p {
-    font-size: 1.2rem;
-    color: #555;
 }
 
 .teachersGrid {
@@ -345,8 +331,6 @@ section:nth-child(even) {
 }
 
 .opinionContent {
-    font-size: 1.1rem;
-    color: #555;
     margin-bottom: 20px;
 }
 
@@ -442,9 +426,169 @@ footer {
     opacity: 0.8;
 }
 
-.footerBottom {
+.footerBottom, .footerBottom p {
     text-align: center;
     margin-top: 20px;
     font-size: 0.9rem;
+    color: #fff;
+
 }
+
+/* Responsive media queries */
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .heroImg img {
+        max-width: 400px;
+    }
+    .course .wrapper {
+        flex-direction: column;
+    }
+    .courseInfo {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .courseImg {
+        text-align: center;
+    }
+    .courseImg img {
+        max-width: 500px;
+    }
+    .subjectsContent {
+        flex-direction: column;
+    }
+    .subjectImg img {
+        max-width: 400px;
+    }
+    .subjectsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .subject {
+        padding: 15px;
+    }
+    .accelerate .wrapper {
+        flex-direction: column;
+    }
+    .accelerateInfo {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .accelerateImg {
+        text-align: center;
+    }
+    .accelerateImg img {
+        max-width: 500px;
+    }
+    .teachersGrid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    .teacherCard img {
+        height: 100px;
+    }
+    .teacherCard h4 {
+        font-size: 1.2rem;
+    }
+    .teacherCard p {
+        font-size: 0.9rem;
+    }
+    .opinionCard {
+        padding: 15px;
+    }
+    .opinionAuthor img {
+        width: 80px;
+        height: 80px;
+    }
+    .opinionAuthor h4 {
+        font-size: 1.2rem;
+    }
+    .opinionAuthor p {
+        font-size: 0.9rem;
+    }
+    .footerGrid {
+        justify-content: center;
+    }
+    .footerSection {
+        flex: 1;
+        max-width: 100%;
+    }
+    .footerLogo {
+        max-width: 100px;
+    }
+    .footerSection h4 {
+        font-size: 1.2rem;
+    }
+    .footerSection p,
+    .footerSection a {
+        font-size: 0.9rem;
+    }
+    .socialIcons img {
+        width: 25px;
+        height: 25px;
+    }
+    .footerBottom, .footerBottom p {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Burger menu icon */
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Mobile Menu */
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+@media screen and (max-width: 925px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #03357C;
+        width: 200px;
+        padding: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        text-align: right;
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        color: #FFF;
+        display: block;
+        width: 100%;
+    }
+
+    /* Show burger menu */
+    .burger {
+        display: flex;
+    }
+    .heroImg img {
+        display: none;
+    }
+}
+
 

@@ -12,6 +12,11 @@
         <div class="wrapper">
             <nav>
                 <a class="logo" href="index.html"><img src="img/curio-03-geel-logo-rgb.png" alt="Curio"></a>
+                <div class="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#course">Opleiding</a></li>
@@ -21,6 +26,7 @@
                     <li><a href="#opinion">Mening</a></li>
                 </ul>
             </nav>
+            
 
             <div class="hero">
                 <div class="heroContent">
@@ -231,3 +237,12 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const burger = document.querySelector('.burger');
+    const navMenu = document.querySelector('nav ul');
+
+    burger.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+</script>
